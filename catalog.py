@@ -570,8 +570,7 @@ def graphStg(mode):
                 lTemp.append(int(stg[k]['Bought']))
         if (not lTemp) == False:
             sizes = lTemp
-            explode = (0.1, 0, 0, 0)
-            plt.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%')
+            plt.pie(sizes, labels=labels, autopct='%1.1f%%')
             plt.axis('equal')
             plt.show()
         else:
@@ -583,17 +582,5 @@ def graphStg(mode):
 print(__name__)
 if __name__ == '__main__':
     #printProdDB(0,"")
-    #sincAdd()
-    #sincAdd()
-    #addPos()
-    #changeProd()
 
-    #sortStg()
-    #printProdDB(0,"")
-    statFunc(1, 2001, "")
-    
-    graphStg('Stock')
-    graphStg('Delivery')
-    graphStg('Bought')
-    #finalSinc()
     
