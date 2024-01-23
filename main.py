@@ -13,7 +13,7 @@ def main():
     dayUD()
     quit = 1;
     while quit:
-        #print("\014")
+        print("\014")
         print('Log in:')
         time.sleep(0.2)
         name = input("UserName: ")
